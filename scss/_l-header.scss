@@ -1,0 +1,162 @@
+.header {
+  padding: 20px 0;
+  background: $white;
+  box-shadow: 0px 4px 25px 0px rgba(16, 26, 7, 0.1);
+
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    @include mobile {
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+    @include mobile {
+      flex: 0 0 100%;
+      gap: 4px;
+    }
+  }
+
+  &__logo {
+    flex: 0 0 auto;
+
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-image {
+      max-width: 100px;
+      width: 100%;
+      height: auto;
+
+      @include tablet {
+        max-width: 68px;
+      }
+    }
+  }
+
+  &__info {
+    &-text {
+      margin: 0 0 10px;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      @include tablet {
+        font-size: 12px;
+      }
+    }
+
+    &-title {
+      margin: 0 0 4px;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+
+      @include tablet {
+        font-size: 14px;
+      }
+    }
+
+    &-description {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+
+      @include tablet {
+        font-size: 12px;
+        line-height: normal;
+      }
+    }
+  }
+
+  &__right {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @include mobile {
+      flex: 0 0 100%;
+      display: block;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 0 0 14px;
+
+    @include mobile {
+      flex-direction: row;
+      gap: 16px;
+      margin: 0;
+    }
+
+    &-link {
+      color: $black;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 140%;
+
+      @include mobile {
+        flex: 1 1 50%;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+    @include laptop {
+      gap: 16px;
+    }
+
+    @include tablet {
+      display: none;
+    }
+
+    &-link {
+      flex: 0 0 auto;
+      display: inline-block;
+      color: $black;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      opacity: 0.7;
+    }
+
+    &-lang {
+      display: inline-block;
+      padding-left: 20px;
+      color: $black;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 140%;
+
+      @include laptop {
+        padding-left: 12px;
+      }
+    }
+  }
+}
