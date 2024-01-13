@@ -1,0 +1,48 @@
+.advantages {
+  &__description {
+    margin: 0;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 0 20px;
+  }
+
+  &__card {
+    flex: 1 1 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 180px;
+    
+
+    @include tablet {
+      flex: 1 1 45%;
+      max-width: none;
+    }
+
+    @include mobilesm {
+      flex: 1 1 100%;
+    }
+
+    &-icon {
+      display: inline-block;
+      width: 60px;
+      height: auto;
+    }
+
+    &-text {
+      display: inline-block;
+      max-width: 180px;
+      color: $black;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      text-align: center;
+    }
+  }
+}

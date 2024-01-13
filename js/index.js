@@ -1,6 +1,9 @@
 const mainPageSwiper = new Swiper(".main-page .swiper", {
   allowTouchMove: false,
-  effect: 'flip'
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
 });
 
 const navMenuItems = document.querySelectorAll(".nav-menu__item");
