@@ -1,2 +1,24 @@
 .button {
+  padding: 10px 20px;
+  color: $black;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: 4px solid $accent;
+  outline: 1px solid $accent;
+  background-color: $white;
+  transition: $baseTransition;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $accent;
+  }
+
+  &:active {
+    border-color: #d7ff39;
+    background-color: #d7ff39;
+  }
 }

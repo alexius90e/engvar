@@ -1,0 +1,41 @@
+.main-page {
+  padding: 28px 0 35px;
+
+  @include laptop {
+    padding: 20px 0 24px;
+  }
+
+  & .container {
+    display: flex;
+    gap: 88px;
+
+    @include desktop {
+      gap: 32px;
+    }
+
+    @include laptop {
+      flex-direction: column-reverse;
+    }
+  }
+
+  & .sidebar {
+    flex: 0 0 320px;
+
+    @include laptop {
+      flex: 0 1 auto;
+    }
+  }
+
+  &__content {
+    min-width: 0;
+
+    @include laptop {
+      min-height: calc(100vh - 240px);
+    }
+
+    &-slider {
+      & .swiper {
+      }
+    }
+  }
+}
