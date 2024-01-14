@@ -1,5 +1,10 @@
 .advantages {
+  &__title {
+    max-width: 580px;
+  }
+
   &__description {
+    max-width: 580px;
     margin: 0;
   }
 
@@ -17,7 +22,6 @@
     flex-direction: column;
     gap: 14px;
     max-width: 180px;
-    
 
     @include tablet {
       flex: 1 1 45%;

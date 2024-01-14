@@ -5,6 +5,16 @@
     padding: 20px 0 24px;
   }
 
+  &_bg {
+    background-image: url(../assets/bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    @include desktop {
+      background-attachment: fixed;
+    }
+  }
+
   & .container {
     display: flex;
     gap: 88px;
@@ -18,6 +28,27 @@
     }
   }
 
+  &_bg  .container {
+    max-width: 1440px;
+    padding-left: calc((1440px - 1180px) / 2);
+    padding-right: 0;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 1440px) {
+      padding-left: calc((100% - 1180px) / 2);
+    }
+
+    @include desktop {
+      padding-left: 20px;
+    }
+  }
+
+  &_bg  .swiper {
+    @include desktop {
+      padding-right: 20px;
+    }
+  } 
+
   & .sidebar {
     flex: 0 0 320px;
 
@@ -25,6 +56,12 @@
       flex: 0 1 auto;
     }
   }
+
+  &_bg  .sidebar {
+    @include laptop {
+      padding-right: 20px;
+    }
+  } 
 
   &__content {
     min-width: 0;
