@@ -21,4 +21,13 @@
     border-color: #d7ff39;
     background-color: #d7ff39;
   }
+
+  &_burger {
+    height: 24px;
+    width: 24px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: url(../assets/menu-burger.svg) center no-repeat;
+  }
 }
