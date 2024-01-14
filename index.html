@@ -42,6 +42,11 @@
             <span class="header__nav-lang">RU</span>
           </nav>
         </div>
+
+        <div class="header__catalog">
+          <span class="header__catalog-title">Каталог услуг</span>
+          <button class="header__catalog-burger button button_burger"></button>
+        </div>
       </div>
     </header>
 
@@ -53,9 +58,69 @@
               <h3 class="sidebar__menu-title">Каталог услуг</h3>
 
               <ul class="sidebar__menu-list">
-                <li class="sidebar__menu-list-item">Промышленное проектирование</li>
-                <li class="sidebar__menu-list-item">Промышленная безопасность</li>
-                <li class="sidebar__menu-list-item">Сервис грузоподъёмных сооружений</li>
+                <li class="sidebar__menu-list-item">
+                  <span>Промышленное проектирование</span>
+                </li>
+
+                <li class="sidebar__menu-list-item">
+                  <span>Промышленная безопасность</span>
+                </li>
+
+                <li class="sidebar__menu-list-item">
+                  <span class="sidebar__menu-list-item-toggler">
+                    Сервис грузоподъёмных сооружений
+                  </span>
+
+                  <ul class="sidebar__menu-list sidebar__menu-list_submenu">
+                    <li class="sidebar__menu-list-item">
+                      <span class="sidebar__menu-list-item-toggler">Монтаж ПС</span>
+
+                      <ul class="sidebar__menu-list sidebar__menu-list_submenu">
+                        <li class="sidebar__menu-list-item">
+                          <a class="sidebar__menu-list-item-link" href="#">
+                            Монтаж крана козлового
+                          </a>
+                        </li>
+
+                        <li class="sidebar__menu-list-item">
+                          <a class="sidebar__menu-list-item-link" href="#">
+                            Монтаж крана консольного
+                          </a>
+                        </li>
+
+                        <li class="sidebar__menu-list-item">
+                          <a class="sidebar__menu-list-item-link" href="#">
+                            Монтаж тельфера электрического
+                          </a>
+                        </li>
+
+                        <li class="sidebar__menu-list-item">
+                          <a class="sidebar__menu-list-item-link" href="#">
+                            Монтаж крана мостового
+                          </a>
+                        </li>
+
+                        <li class="sidebar__menu-list-item">
+                          <a class="sidebar__menu-list-item-link" href="#">
+                            Монтаж крана эстакады
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="sidebar__menu-list-item">
+                      <span>Ремонт ПС</span>
+                    </li>
+
+                    <li class="sidebar__menu-list-item">
+                      <span>Техническое обслуживание</span>
+                    </li>
+
+                    <li class="sidebar__menu-list-item">
+                      <span>Реконструкция/Модернизация ПС</span>
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </nav>
 
@@ -163,7 +228,6 @@
 
     <footer class="footer">
       <div class="container">
-
         <div class="footer__lang">ru</div>
 
         <div class="footer__sitemap">

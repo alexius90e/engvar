@@ -28,6 +28,22 @@
     padding: 0;
     margin: 0;
     border: none;
+    border-radius: 0;
+    outline: none;
     background: url(../assets/menu-burger.svg) center no-repeat;
+
+    &:hover {
+      border: none;
+      background-color: rgba($color: #000000, $alpha: 0);
+    }
+  
+    &:active {
+      border: none;
+      background-color: rgba($color: #000000, $alpha: 0);
+    }
+
+    &.active {
+      background-image: url(../assets/menu-burger-close.svg);
+    }
   }
 }
