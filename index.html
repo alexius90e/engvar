@@ -39,7 +39,16 @@
             <a class="header__nav-link" href="#">Опыт</a>
             <a class="header__nav-link" href="#">Контакты</a>
 
-            <span class="header__nav-lang">RU</span>
+            <span class="header__nav-lang">
+              <div class="custom-select" data-value="en">
+                <select class="form-select" id="headerLang" name="headerLang">
+                  <option value="ru">RU</option>
+                  <option value="en">EN</option>
+                  <option value="de">DE</option>
+                  <option value="fr">FR</option>
+                </select>
+              </div>
+            </span>
           </nav>
         </div>
 
@@ -228,7 +237,16 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="footer__lang">ru</div>
+        <div class="footer__lang">
+          <div class="custom-select" data-value="en">
+            <select class="form-select" id="footerLang" name="footerLang">
+              <option value="ru">RU</option>
+              <option value="en">EN</option>
+              <option value="de">DE</option>
+              <option value="fr">FR</option>
+            </select>
+          </div>
+        </div>
 
         <div class="footer__sitemap">
           <a class="footer__link" href="#">Карта сайта</a>

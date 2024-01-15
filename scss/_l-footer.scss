@@ -25,11 +25,18 @@
 
   &__lang {
     display: none;
-    text-transform: uppercase;
-    font-weight: 500;
 
     @include tablet {
       display: block;
+    }
+
+    & .custom-select {
+      & .select-items {
+        top: auto;
+        right: auto;
+        left: -8px;
+        bottom: calc(100% + 8px);
+      }
     }
   }
 

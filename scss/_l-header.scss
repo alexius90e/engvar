@@ -183,11 +183,6 @@
     &-lang {
       display: inline-block;
       padding-left: 20px;
-      color: $black;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 140%;
 
       @include laptop {
         padding-left: 12px;
@@ -195,6 +190,12 @@
 
       @include tablet {
         display: none;
+      }
+
+      & .custom-select {
+        & .select-items {
+          right: -8px;
+        }
       }
     }
   }
