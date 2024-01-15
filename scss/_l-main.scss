@@ -1,2 +1,6 @@
 .main {
+
+  @include tablet {
+    padding-bottom: 140px;
+  }
 }

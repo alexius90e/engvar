@@ -1,3 +1,5 @@
+import './custom-select.js'
+
 const mainPageSwiper = new Swiper(".main-page .swiper", {
   allowTouchMove: false,
   effect: "fade",
@@ -39,6 +41,7 @@ headerCatalogBurger.addEventListener("click", () => {
   headerCatalogBurger.classList.toggle("active");
   document.body.classList.toggle("active");
   headerNav.classList.remove("active");
+  footerCatalogBurger.classList.remove("active");
 });
 
 footerCatalogBurger.addEventListener("click", () => {
@@ -46,4 +49,5 @@ footerCatalogBurger.addEventListener("click", () => {
   footerCatalogBurger.classList.toggle("active");
   document.body.classList.toggle("active");
   sidebarMenu.classList.remove("active");
+  headerCatalogBurger.classList.remove("active");
 });

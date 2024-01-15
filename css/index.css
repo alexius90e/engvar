@@ -5,6 +5,7 @@ html {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-variant-numeric: lining-nums proportional-nums;
   scroll-behavior: smooth;
 }
 
@@ -223,6 +224,16 @@ figure {
 .sidebar__menu-list-item.active > .sidebar__menu-list_submenu {
   display: block;
 }
+@media (max-width: 768px) {
+  .sidebar__controls {
+    position: fixed;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 0 20px;
+  }
+}
 .sidebar__controls-title {
   margin: 0 0 20px;
   color: #101a07;
@@ -307,7 +318,7 @@ figure {
   position: relative;
   z-index: 100;
   padding: 20px 0;
-  background: #ffffff;
+  background-color: #ffffff;
   box-shadow: 0px 4px 25px 0px rgba(16, 26, 7, 0.1);
 }
 @media (max-width: 768px) {
@@ -446,7 +457,7 @@ figure {
 @media (max-width: 768px) {
   .header__nav {
     position: fixed;
-    z-index: -1;
+    z-index: -100;
     top: 0;
     bottom: 0;
     left: 0;
@@ -522,6 +533,12 @@ figure {
   line-height: normal;
 }
 
+@media (max-width: 768px) {
+  .main {
+    padding-bottom: 140px;
+  }
+}
+
 .footer {
   position: relative;
   z-index: 100;
@@ -531,6 +548,15 @@ figure {
   font-weight: 400;
   line-height: normal;
   box-shadow: 0px 4px 25px 0px rgba(16, 26, 7, 0.1);
+  background-color: #ffffff;
+}
+@media (max-width: 768px) {
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
 .footer .container {
   display: flex;
