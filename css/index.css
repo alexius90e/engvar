@@ -1011,3 +1011,36 @@ figure {
     font-size: 14px;
   }
 }
+
+.service-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 20px;
+}
+.service-info__title {
+  flex: 1 1 100%;
+}
+.service-info__block {
+  flex: 1 1 45%;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+@media (max-width: 768px) {
+  .service-info__block {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .service-info__block {
+    flex: 1 1 100%;
+  }
+}
+.service-info__block p {
+  margin: 0 0 12px;
+}
+.service-info__block ul {
+  margin: 0 0 12px;
+  padding-left: 20px;
+}
