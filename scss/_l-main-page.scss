@@ -25,10 +25,11 @@
 
     @include laptop {
       flex-direction: column-reverse;
+      gap: 0;
     }
   }
 
-  &_bg  .container {
+  &_bg .container {
     max-width: 1440px;
     padding-left: calc((1440px - 1180px) / 2);
     padding-right: 0;
@@ -43,11 +44,11 @@
     }
   }
 
-  &_bg  .swiper {
+  &_bg .swiper {
     @include desktop {
       padding-right: 20px;
     }
-  } 
+  }
 
   & .sidebar {
     flex: 0 0 320px;
@@ -57,22 +58,17 @@
     }
   }
 
-  &_bg  .sidebar {
+  &_bg .sidebar {
     @include laptop {
       padding-right: 20px;
     }
-  } 
+  }
 
   &__content {
     min-width: 0;
 
     @include laptop {
       min-height: calc(100vh - 240px);
-    }
-
-    &-slider {
-      & .swiper {
-      }
     }
   }
 }

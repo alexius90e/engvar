@@ -1,0 +1,113 @@
+.experience {
+  &__slider {
+    position: relative;
+    margin-bottom: 10px;
+
+    & .swiper {
+      &-button-prev,
+      &-button-next {
+        top: 60%;
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url(../assets/next.svg) center no-repeat;
+        transform: translateY(-50%);
+
+        @include tablet {
+          display: none;
+        }
+
+        &::after,
+        &::before {
+          display: none;
+        }
+      }
+
+      &-button-prev {
+        left: 4px;
+        transform: translateY(-50%) rotate(180deg);
+      }
+
+      &-button-next {
+        right: 4px;
+      }
+    }
+  }
+
+  &__slide {
+    display: flex;
+
+    @include mobile {
+      display: block;
+    }
+
+    &-figure {
+      &-image {
+        display: block;
+        max-width: 380px;
+        height: 100%;
+        border-radius: 8px 0px 0px 8px;
+        object-fit: cover;
+
+        @include tablet {
+          max-width: 280px;
+        }
+
+        @include mobile {
+          max-width: none;
+          width: 100%;
+          height: 140px;
+          border-radius: 8px 8px 0px 0px;
+        }
+      }
+    }
+
+    &-info {
+      padding: 10px 20px 15px;
+
+      @include mobile {
+        padding: 10px 0 15px;
+      }
+    }
+
+    &-title {
+      margin: 0 0 6px;
+    }
+
+    &-text {
+      margin: 0 0 7px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__thumbs {
+    @include tablet {
+      display: none;
+    }
+
+    & .swiper {
+      &-slide {
+        filter: brightness(0.7);
+
+        & img {
+          display: block;
+          width: 100%;
+          height: 115px;
+          object-fit: cover;
+          border-radius: 6px;
+        }
+
+        &-thumb-active {
+          filter: brightness(1);
+        }
+      }
+    }
+  }
+}

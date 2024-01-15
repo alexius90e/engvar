@@ -793,6 +793,7 @@ figure {
 @media (max-width: 992px) {
   .main-page .container {
     flex-direction: column-reverse;
+    gap: 0;
   }
 }
 .main-page_bg .container {
@@ -837,6 +838,7 @@ figure {
     min-height: calc(100vh - 240px);
   }
 }
+
 .about-us__title {
   max-width: 580px;
 }
@@ -1043,4 +1045,101 @@ figure {
 .service-info__block ul {
   margin: 0 0 12px;
   padding-left: 20px;
+}
+
+.experience__slider {
+  position: relative;
+  margin-bottom: 10px;
+}
+.experience__slider .swiper-button-prev, .experience__slider .swiper-button-next {
+  top: 60%;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(../assets/next.svg) center no-repeat;
+  transform: translateY(-50%);
+}
+@media (max-width: 768px) {
+  .experience__slider .swiper-button-prev, .experience__slider .swiper-button-next {
+    display: none;
+  }
+}
+.experience__slider .swiper-button-prev::after, .experience__slider .swiper-button-prev::before, .experience__slider .swiper-button-next::after, .experience__slider .swiper-button-next::before {
+  display: none;
+}
+.experience__slider .swiper-button-prev {
+  left: 4px;
+  transform: translateY(-50%) rotate(180deg);
+}
+.experience__slider .swiper-button-next {
+  right: 4px;
+}
+.experience__slide {
+  display: flex;
+}
+@media (max-width: 576px) {
+  .experience__slide {
+    display: block;
+  }
+}
+.experience__slide-figure-image {
+  display: block;
+  max-width: 380px;
+  height: 100%;
+  border-radius: 8px 0px 0px 8px;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .experience__slide-figure-image {
+    max-width: 280px;
+  }
+}
+@media (max-width: 576px) {
+  .experience__slide-figure-image {
+    max-width: none;
+    width: 100%;
+    height: 140px;
+    border-radius: 8px 8px 0px 0px;
+  }
+}
+.experience__slide-info {
+  padding: 10px 20px 15px;
+}
+@media (max-width: 576px) {
+  .experience__slide-info {
+    padding: 10px 0 15px;
+  }
+}
+.experience__slide-title {
+  margin: 0 0 6px;
+}
+.experience__slide-text {
+  margin: 0 0 7px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+@media (max-width: 576px) {
+  .experience__slide-text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .experience__thumbs {
+    display: none;
+  }
+}
+.experience__thumbs .swiper-slide {
+  filter: brightness(0.7);
+}
+.experience__thumbs .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 115px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.experience__thumbs .swiper-slide-thumb-active {
+  filter: brightness(1);
 }

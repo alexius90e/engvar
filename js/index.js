@@ -1,10 +1,28 @@
-import './custom-select.js'
+import "./custom-select.js";
 
-const mainPageSwiper = new Swiper(".main-page .swiper", {
+const mainPageSwiper = new Swiper(".main-page__content-slider>.swiper", {
   allowTouchMove: false,
   effect: "fade",
   fadeEffect: {
     crossFade: true,
+  },
+});
+
+const experienceSwiperThumbs = new Swiper(".experience__thumbs .swiper", {
+  spaceBetween: 20,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+
+const experienceSwiper = new Swiper(".experience__slider .swiper", {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".experience__slider .swiper-button-next",
+    prevEl: ".experience__slider .swiper-button-prev",
+  },
+  thumbs: {
+    swiper: experienceSwiperThumbs,
   },
 });
 
@@ -34,7 +52,6 @@ const footerCatalogBurger = document.querySelector(".footer__buttons .button_bur
 
 const sidebarMenu = document.querySelector(".sidebar__menu");
 const headerNav = document.querySelector(".header__nav");
-
 
 headerCatalogBurger.addEventListener("click", () => {
   sidebarMenu.classList.toggle("active");
