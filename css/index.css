@@ -458,7 +458,10 @@ figure {
 }
 
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   padding: 20px 0;
   background-color: #ffffff;
@@ -674,14 +677,30 @@ figure {
   line-height: normal;
 }
 
+.main {
+  padding: 128px 0 56px;
+}
+@media (max-width: 992px) {
+  .main {
+    padding: 148px 0 56px;
+  }
+}
 @media (max-width: 768px) {
   .main {
-    padding-bottom: 140px;
+    padding: 148px 0 140px;
+  }
+}
+@media (max-width: 576px) {
+  .main {
+    padding: 172px 0 140px;
   }
 }
 
 .footer {
-  position: relative;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 100;
   padding: 20px 0;
   font-size: 14px;
@@ -1088,6 +1107,8 @@ figure {
   height: 100%;
   border-radius: 8px 0px 0px 8px;
   object-fit: cover;
+  transition: all ease-in-out 0.15s;
+  filter: grayscale(100%);
 }
 @media (max-width: 768px) {
   .experience__slide-figure-image {
@@ -1101,6 +1122,9 @@ figure {
     height: 140px;
     border-radius: 8px 8px 0px 0px;
   }
+}
+.experience__slide-figure-image:hover {
+  filter: grayscale(0%);
 }
 .experience__slide-info {
   padding: 10px 20px 15px;
@@ -1139,7 +1163,12 @@ figure {
   height: 115px;
   object-fit: cover;
   border-radius: 6px;
+  transition: all ease-in-out 0.15s;
+  filter: grayscale(100%);
 }
 .experience__thumbs .swiper-slide-thumb-active {
   filter: brightness(1);
+}
+.experience__thumbs .swiper-slide-thumb-active img {
+  filter: grayscale(0%);
 }

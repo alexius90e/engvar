@@ -1,6 +1,15 @@
 .main {
+  padding: 128px 0 56px;
+
+  @include laptop {
+    padding: 148px 0 56px;
+  }
 
   @include tablet {
-    padding-bottom: 140px;
+    padding: 148px 0 140px;
+  }
+
+  @include mobile {
+    padding: 172px 0 140px;
   }
 }
